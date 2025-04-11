@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FrontDev-Welcome-Task-Practice/static/css/main.f10b720b.css",
+    "main.js": "/FrontDev-Welcome-Task-Practice/static/js/main.4eeb3429.js",
+    "static/js/453.3f8160c4.chunk.js": "/FrontDev-Welcome-Task-Practice/static/js/453.3f8160c4.chunk.js",
+    "index.html": "/FrontDev-Welcome-Task-Practice/index.html",
+    "main.f10b720b.css.map": "/FrontDev-Welcome-Task-Practice/static/css/main.f10b720b.css.map",
+    "main.4eeb3429.js.map": "/FrontDev-Welcome-Task-Practice/static/js/main.4eeb3429.js.map",
+    "453.3f8160c4.chunk.js.map": "/FrontDev-Welcome-Task-Practice/static/js/453.3f8160c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f10b720b.css",
+    "static/js/main.4eeb3429.js"
+  ]
+}
