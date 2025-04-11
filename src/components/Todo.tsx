@@ -8,7 +8,11 @@ interface Task {
   completed: boolean;
 }
 
-const Todo: React.FC = () => {
+type TodoProps = {
+  onThemeToggle: () => void;
+};
+
+const Todo: React.FC<TodoProps> = ({ onThemeToggle }) => {
   const [inputValue, setInputValue] = useState<string>("");
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -21,7 +25,7 @@ const Todo: React.FC = () => {
     <div className='todo-container'>
       <div className='todo-header'>
         <h1>Список задач</h1>
-        <ThemeToggle />
+        <ThemeToggle onClick={onThemeToggle} />
       </div>
 
       <form className='input-section' onSubmit={handleSubmit}>
