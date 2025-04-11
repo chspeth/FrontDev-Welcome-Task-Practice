@@ -7,6 +7,7 @@ type Task = {
   id: number;
   text: string;
   completed: boolean;
+  date: string;
 }
 
 type TodoProps = {
@@ -24,7 +25,8 @@ const Todo: React.FC<TodoProps> = ({ onThemeToggle }) => {
     const newTask: Task = {
       id: Date.now(),
       text: inputValue.trim(),
-      completed: false
+      completed: false,
+      date: new Date().toLocaleDateString(),
     };
 
     setTasks([newTask, ...tasks]);
@@ -72,6 +74,7 @@ const Todo: React.FC<TodoProps> = ({ onThemeToggle }) => {
             completed={task.completed}
             onToggle={toggleTask}
             onDelete={deleteTask}
+            date={task.date}
           />
         ))}
       </div>
